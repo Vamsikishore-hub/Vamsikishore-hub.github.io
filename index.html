@@ -155,8 +155,17 @@ footer{padding:96px 0 64px;position:relative;z-index:2}
   .hero{grid-template-columns:1fr;gap:42px}
   .skills,.edu{grid-template-columns:1fr}
   .xp-item{grid-template-columns:1fr;gap:6px}
-  .nav-links li:nth-child(n+4){display:none}
   section{padding:64px 0}
+}
+@media(max-width:640px){
+  .wrap{padding:0 20px}
+  .brand{font-size:12px}
+  .brand-x{display:none}
+  .nav-links{gap:14px}
+  .nav-links a{font-size:11px;letter-spacing:0}
+}
+@media(max-width:380px){
+  .nav-links li:nth-child(2){display:none}
 }
 </style>
 </head>
@@ -168,7 +177,7 @@ footer{padding:96px 0 64px;position:relative;z-index:2}
 
 <nav>
   <div class="wrap nav-in">
-    <a class="brand" href="#top">vamsi<b>@</b>nallagopu:~$</a>
+    <a class="brand" href="#top">vamsi<b>@</b>nallagopu<span class="brand-x">:~$</span></a>
     <ul class="nav-links">
       <li><a href="#projects">projects</a></li>
       <li><a href="#experience">experience</a></li>
@@ -207,7 +216,7 @@ footer{padding:96px 0 64px;position:relative;z-index:2}
       <article class="card reveal tilt">
         <div class="card-log"><span><span class="ok">[shipped]</span> production deployment · CI/CD</span><span>CSE 6550 · team of 3</span></div>
         <div class="card-in">
-          <h3><a href="https://github.com/Vamsikishore-hub" target="_blank" rel="noopener">SWEBOK Textbook Chatbot</a></h3>
+          <h3><a href="https://github.com/Vamsikishore-hub/csusb_fall2024_cse6550_team3" target="_blank" rel="noopener">SWEBOK Textbook Chatbot</a></h3>
           <p>RAG-based AI chatbot delivering citation-grounded answers across every SWEBOK knowledge area — document chunking, FAISS vector embeddings, and a semantic retrieval pipeline, containerized and shipped to CSUSB's production server through GitHub Actions CI/CD.</p>
           <div class="metric-row">
             <div class="metric"><b data-count="20">0</b><span>test categories (pytest)</span></div>
@@ -215,14 +224,14 @@ footer{padding:96px 0 64px;position:relative;z-index:2}
             <div class="metric"><b>Live</b><span>production deployment</span></div>
           </div>
           <div class="tags"><span class="tag">Python</span><span class="tag">Mistral</span><span class="tag">FAISS</span><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span></div>
-          <div class="card-links"><a class="tlink" href="https://github.com/Vamsikishore-hub" target="_blank" rel="noopener">source →</a></div>
+          <div class="card-links"><a class="tlink" href="https://github.com/Vamsikishore-hub/csusb_fall2024_cse6550_team3" target="_blank" rel="noopener">source →</a></div>
         </div>
       </article>
 
       <article class="card reveal tilt">
         <div class="card-log"><span><span class="ok">[live]</span> refresh cycle: 30 min</span><span>real-time pipeline</span></div>
         <div class="card-in">
-          <h3><a href="https://github.com/Vamsikishore-hub" target="_blank" rel="noopener">Stock Market Sentiment Analyzer</a></h3>
+          <h3><a href="https://github.com/Vamsikishore-hub/stock-sentiment-analyzer" target="_blank" rel="noopener">Stock Market Sentiment Analyzer</a></h3>
           <p>Real-time stock intelligence tracking 10 major tech stocks: FinBERT scores every headline, GPT-4o-mini reasons over macro signals (oil, Fed policy, geopolitics), and a React + Recharts dashboard publishes Buy/Sell/Hold calls with written rationale.</p>
           <div class="metric-row">
             <div class="metric"><b data-count="100" data-suffix="+">0</b><span>headlines / cycle</span></div>
@@ -230,14 +239,14 @@ footer{padding:96px 0 64px;position:relative;z-index:2}
             <div class="metric"><b data-count="30" data-suffix=" min">0</b><span>update interval</span></div>
           </div>
           <div class="tags"><span class="tag">FastAPI</span><span class="tag">FinBERT</span><span class="tag">OpenAI API</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">Docker</span></div>
-          <div class="card-links"><a class="tlink" href="https://github.com/Vamsikishore-hub" target="_blank" rel="noopener">source →</a></div>
+          <div class="card-links"><a class="tlink" href="https://github.com/Vamsikishore-hub/stock-sentiment-analyzer" target="_blank" rel="noopener">source →</a></div>
         </div>
       </article>
 
       <article class="card reveal tilt">
         <div class="card-log"><span><span class="ok">[batch]</span> bronze → silver → gold</span><span>Databricks lakehouse</span></div>
         <div class="card-in">
-          <h3><a href="https://github.com/Vamsikishore-hub" target="_blank" rel="noopener">Restaurant Order Analytics Pipeline</a></h3>
+          <h3><a href="https://github.com/Vamsikishore-hub/Restaurant-Analytics-Pipeline" target="_blank" rel="noopener">Restaurant Order Analytics Pipeline</a></h3>
           <p>Medallion Architecture lakehouse on Databricks: raw ingestion to feature engineering to business aggregations, with Spark SQL window functions and Delta Lake ACID transactions and time travel.</p>
           <div class="metric-row">
             <div class="metric"><b data-count="100" data-suffix="K">0</b><span>orders processed</span></div>
@@ -245,7 +254,7 @@ footer{padding:96px 0 64px;position:relative;z-index:2}
             <div class="metric"><b data-count="3">0</b><span>medallion layers</span></div>
           </div>
           <div class="tags"><span class="tag">PySpark</span><span class="tag">Delta Lake</span><span class="tag">Spark SQL</span><span class="tag">Databricks</span></div>
-          <div class="card-links"><a class="tlink" href="https://github.com/Vamsikishore-hub" target="_blank" rel="noopener">source →</a></div>
+          <div class="card-links"><a class="tlink" href="https://github.com/Vamsikishore-hub/Restaurant-Analytics-Pipeline" target="_blank" rel="noopener">source →</a></div>
         </div>
       </article>
 
@@ -289,6 +298,7 @@ footer{padding:96px 0 64px;position:relative;z-index:2}
       <h3>Object Detection Using Machine Learning</h3>
       <p>Comparative analysis of YOLO variants (v2/v3/v4) against two-stage detectors (RCNN, Fast-RCNN) on speed and accuracy, with applications evaluated in autonomous driving, traffic surveillance, and medical imaging.</p>
       <p class="mono-note">IJSREM · Vol. 08, Issue 01 · Jan 2024 · SJIF 8.176 · ISSN 2582-3930</p>
+      <div class="card-links" style="margin-top:14px"><a class="tlink" href="https://ijsrem.com/uploads/production/Object-detection-using-Machine-Learning.pdf" target="_blank" rel="noopener">read the paper →</a></div>
     </div>
   </div>
 </section>
